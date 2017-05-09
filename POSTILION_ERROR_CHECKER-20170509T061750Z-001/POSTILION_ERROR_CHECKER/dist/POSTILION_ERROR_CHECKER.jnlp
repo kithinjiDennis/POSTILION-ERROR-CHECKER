@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="POSTILION_ERROR_CHECKER.jnlp">
+  <information>
+    <title>POSTILION_ERROR_CHECKER</title>
+    <vendor>kithinjid</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  <shortcut><desktop/></shortcut>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="POSTILION_ERROR_CHECKER.jar" size="20906" download="eager" />
+    <jar href="lib\sqljdbc4-3.0.jar" size="536204" download="eager" />
+    <jar href="lib\sqlserverjdbc.jar" size="517093" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="POSTILION_ERROR_CHECKER" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="postilion_error_checker.POSTILION_ERROR_CHECKER"  name="POSTILION_ERROR_CHECKER" />
+  <update check="always"/>
+</jnlp>

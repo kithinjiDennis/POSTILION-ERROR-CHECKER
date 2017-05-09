@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?scenebuilder-background-color 0x606060ff?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="781.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="postilion_error_checker.checker_guiController">
+  <children>
+    <TextField alignment="CENTER" editable="false" layoutX="380.0" layoutY="21.0" prefHeight="69.0" prefWidth="376.0" text="POSTILION ERROR CHECKER">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant>
+              <color>
+                <Color blue="0.800" green="0.704" red="0.000" fx:id="x1" />
+              </color>
+            </javafx.scene.effect.Light.Distant>
+          </light>
+        </Lighting>
+      </effect>
+    </TextField>
+    <ImageView fitHeight="189.25000041950486" fitWidth="252.3333282470703" layoutX="24.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="file:/C:/Users/kithinjid/Google%20Drive/interswitch/www/interswitch/interswitchngnew.png" />
+      </image>
+    </ImageView>
+    <TextArea fx:id="TA" cache="false" disable="false" editable="true" layoutX="380.0" layoutY="122.0" prefHeight="412.0" prefWidth="387.0" visible="true" wrapText="true" />
+    <Button layoutX="77.0" layoutY="523.0" mnemonicParsing="false" onAction="#handleRUNAction" text="RUN" />
+    <ComboBox fx:id="item" layoutX="205.0" layoutY="229.0" promptText="pick">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="$x1" />
+          </light>
+        </Lighting>
+      </effect>
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="BOBsnk" />
+          <String fx:value="CardCntrlSnk" />
+          <String fx:value="CBAsnk" />
+          <String fx:value="COBsnk" />
+          <String fx:value="CreditBansnk" />
+          <String fx:value="Equitysnk" />
+          <String fx:value="FauluBanksnk" />
+          <String fx:value="FBLsnk" />
+          <String fx:value="FBLVISAsnk" />
+          <String fx:value="GTBsnk" />
+          <String fx:value="GTBUSDsnk" />
+          <String fx:value="GTEMPsnk" />
+          <String fx:value="ISTsnk" />
+          <String fx:value="Kadisnk" />
+          <String fx:value="KCBsnk" />
+          <String fx:value="Kenswitchsnk" />
+          <String fx:value="KITssnk" />
+          <String fx:value="KREPsnk" />
+          <String fx:value="MEGASWTsnk" />
+          <String fx:value="NBKsnk" />
+          <String fx:value="NICAcqSnk" />
+          <String fx:value="NICKEsnk" />
+          <String fx:value="NICKITssnk" />
+          <String fx:value="NICmVSsnk" />
+          <String fx:value="NICPrepaysnk" />
+          <String fx:value="SportPesasnk" />
+          <String fx:value="Stanbicsnk" />
+          <String fx:value="VervePPsnk" />
+          <String fx:value="XTRANET2snk" />
+          <String fx:value="XTRANET3snk" />
+          <String fx:value="XTRANETCsnk" />
+          <String fx:value="CardCtrlSnk" />
+          <String fx:value="CardCtSnk" />
+          <String fx:value="ESBsnk" />
+          <String fx:value="GTEMPsnk" />
+          <String fx:value="kenswitchSnk" />
+          <String fx:value="NicAcqSnk" />
+          <String fx:value="NICkeSnk" />
+          <String fx:value="NICKITSsnk" />
+          <String fx:value="NICPrepaySnk" />
+          <String fx:value="NICSnk" />
+          <String fx:value="PAYNETsnk" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="item2" editable="false" layoutX="61.0" layoutY="229.0" prefHeight="21.0" prefWidth="112.0" promptText="pick">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="$x1" />
+          </light>
+        </Lighting>
+      </effect>
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="0 -Approved successfully" />
+          <String fx:value="1 -Refer to card issuer" />
+          <String fx:value="2 -Refer to card issuer" />
+          <String fx:value="3 -Invalid merchant" />
+          <String fx:value="4 -Pick-up card" />
+          <String fx:value="5 -Do not honor" />
+          <String fx:value="6 -Error" />
+          <String fx:value="7 -Pick-up card, special condition" />
+          <String fx:value="8 -Honor with identification" />
+          <String fx:value="9 -Request in progress" />
+          <String fx:value="10 -Approved, partial" />
+          <String fx:value="11 -Approved, VIP" />
+          <String fx:value="12 -Invalid transaction" />
+          <String fx:value="13 -Invalid amount" />
+          <String fx:value="14 -Invalid card number" />
+          <String fx:value="15 -No such issuer" />
+          <String fx:value="16 -Approved" />
+          <String fx:value="17 -Customer cancellation" />
+          <String fx:value="18 -Customer dispute" />
+          <String fx:value="19 -Re-enter transaction" />
+          <String fx:value="20 -Invalid response" />
+          <String fx:value="21 -No action taken" />
+          <String fx:value="22 -Suspected malfunction" />
+          <String fx:value="23 -Unacceptable transaction fee" />
+          <String fx:value="24 -File update not supported" />
+          <String fx:value="25 -Unable to locate record" />
+          <String fx:value="26 -Duplicate record" />
+          <String fx:value="27 -File update field edit error" />
+          <String fx:value="28 -File update file locked" />
+          <String fx:value="29 -File update failed" />
+          <String fx:value="30 -Format error" />
+          <String fx:value="31 -Bank not supported" />
+          <String fx:value="32 -Completed partially" />
+          <String fx:value="33 -Expired card,pick-up" />
+          <String fx:value="34 -Suspected fraud,pick-up" />
+          <String fx:value="35 -Contact acquirer,pick-up" />
+          <String fx:value="36 -Restricted card,pick-up" />
+          <String fx:value="37 -Call acquirer security,pick-up" />
+          <String fx:value="38 -PIN tries exceeded,pick-up" />
+          <String fx:value="39 -No credit account" />
+          <String fx:value="40 -Function not supported" />
+          <String fx:value="41 -Lost card, pick-up" />
+          <String fx:value="42 -No universal account" />
+          <String fx:value="43 -Stolen card, pick-up" />
+          <String fx:value="44 -No investment account" />
+          <String fx:value="45 -Account closed" />
+          <String fx:value="46 -Identification required" />
+          <String fx:value="47 -Identification cross-check required" />
+          <String fx:value="48 -No customer record" />
+          <String fx:value="51 -Not sufficient funds" />
+          <String fx:value="52 -No check account" />
+          <String fx:value="53 -No savings account" />
+          <String fx:value="54 -Expired card" />
+          <String fx:value="55 -Incorrect PIN" />
+          <String fx:value="56 -No card record" />
+          <String fx:value="57 -Transaction not permitted to cardholder" />
+          <String fx:value="58 -Transaction not permitted on terminal" />
+          <String fx:value="59 -Suspected fraud" />
+          <String fx:value="60 - Contact acquirer" />
+          <String fx:value="61 -Exceeds withdrawal limit" />
+          <String fx:value="62 -Restricted card" />
+          <String fx:value="63 -Security violation" />
+          <String fx:value="64 -Original amount incorrect" />
+          <String fx:value="65 -Exceeds withdrawal frequency" />
+          <String fx:value="66 -Call acquirer security" />
+          <String fx:value="67 -Hard capture" />
+          <String fx:value="68 -Response received too late" />
+          <String fx:value="69 -Advice received too late" />
+          <String fx:value="75 -PIN tries exceeded" />
+          <String fx:value="76 -Reserved for future Realtime use" />
+          <String fx:value="77 -Intervene, bank approval required" />
+          <String fx:value="78 -Intervene, bank approval required for partial amount" />
+          <String fx:value="90 -Cut-off in progress" />
+          <String fx:value="91 -Issuer or switch inoperative" />
+          <String fx:value="92 -Routing error" />
+          <String fx:value="93 -Violation of law" />
+          <String fx:value="94 -Duplicate transaction" />
+          <String fx:value="95 -Reconcile error" />
+          <String fx:value="96 -System malfunction" />
+          <String fx:value="97 -Reserved for future Realtime use" />
+          <String fx:value="98 -Exceeds cash limit" />
+          <String fx:value="99 -Reserved for future Realtime use" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label blendMode="GREEN" layoutX="228.0" layoutY="212.0" text="Sink Node" />
+    <Button fx:id="enter_number" layoutX="159.0" layoutY="269.0" mnemonicParsing="false" onAction="#handleButtonAction" text="enter" />
+    <TextField fx:id="get_NO" layoutX="87.0" layoutY="168.0" prefHeight="23.0" prefWidth="200.0" />
+    <Label alignment="CENTER" blendMode="GREEN" layoutX="119.0" layoutY="133.0" prefWidth="142.0" text="Support Contact" textOverrun="ELLIPSIS" />
+    <Label alignment="CENTER" blendMode="GREEN" layoutX="51.0" layoutY="209.0" prefWidth="142.0" text="Response Code" textOverrun="ELLIPSIS" />
+    <TextArea fx:id="preview" editable="false" layoutX="51.0" layoutY="339.0" prefHeight="131.0" prefWidth="236.0" wrapText="true" />
+    <Label blendMode="GREEN" layoutX="59.0" layoutY="312.0" prefWidth="60.0" text="preveiw" />
+    <Button layoutX="207.0" layoutY="523.0" mnemonicParsing="false" onAction="#handlestopAction" text="STOP" />
+  </children>
+</AnchorPane>
